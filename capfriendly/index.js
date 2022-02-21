@@ -106,7 +106,7 @@ function getTeam(team) {
 			});
 
 			fs.writeFileSync(
-				`${process.env.OUTPUT_FOLDER}/${team.id}.json`,
+				`${process.argv.slice(2)[0]}/${team.id}.json`,
 				JSON.stringify(data),
 				"utf-8"
 			);
