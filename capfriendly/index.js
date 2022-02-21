@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 let axios = require("axios");
 let cheerio = require("cheerio");
 let fs = require("fs");
