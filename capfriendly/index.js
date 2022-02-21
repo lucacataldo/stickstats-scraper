@@ -104,7 +104,7 @@ function getTeam(team) {
 			});
 
 			fs.writeFileSync(
-				`../../frontend/public/capdata/${team.id}.json`,
+				`${process.env.OUTPUT_FOLDER}/${team.id}.json`,
 				JSON.stringify(data),
 				"utf-8"
 			);
